@@ -4,7 +4,7 @@
 
 This is the course project for my [MERN eCommerce From Scratch](https://www.udemy.com/course/mern-ecommerce) course
 
-![screenshot](https://github.com/Andrei2022/ReactEcommerceWebsite/tree/master/uploads/poza.png)
+![screenshot](https://github.com/Andrei2022/ReactEcommerceWebsite/blob/master/uploads/poza.PNG)
 
 ## Features
 

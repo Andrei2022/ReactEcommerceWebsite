@@ -59,7 +59,6 @@ const LoginScreen = ({ location, history }) => {
           Intră în cont
         </Button>
       </Form>
-
       <Row className='py-3'>
         <Col>
           Client nou?{' '}

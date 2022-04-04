@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
 import Rating from '../components/Rating'
@@ -16,6 +16,9 @@ const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1)
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState('')
+  const historyback = useHistory();
+
+
 
   const dispatch = useDispatch()
 
@@ -59,7 +62,8 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link className='btn btn-light my-3' to='/'>      
+
+      <Link className='btn btn-light my-3' onClick={() => historyback.goBack()}> 
         Întoarce-te
       </Link>
       {loading ? (

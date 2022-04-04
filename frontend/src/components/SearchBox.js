@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { BiSearch } from 'react-icons/bi'
+import './styles.css'
 
 const SearchBox = ({ history }) => {
   const [keyword, setKeyword] = useState('')
@@ -24,14 +25,15 @@ const SearchBox = ({ history }) => {
         className='mr-sm-2 ml-sm-4'
       ></Form.Control>
       
-      <Button type='submit' variant="outline-success" className='mr-sm-2' style={{
+      <Button type='submit' className='btn-success' style={{
           textAlign: "center",
           maxWidth: "950px",
           margin: "0 auto",
           border: "1px solid #e6e6e6",
           padding: "10px",
-          marginTop: "9px",
-          marginBottom: "8px"
+          marginTop: "-45px",
+          marginBottom: "32px",
+          marginLeft: "245px"
         }} >
       <BiSearch size={18}/>
       </Button>
